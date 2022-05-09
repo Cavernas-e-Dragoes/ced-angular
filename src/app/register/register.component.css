@@ -1,0 +1,65 @@
+#sect1{
+    display: flex;
+    background-image: url("src/assets/images/backgroundlogin.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position-x: 6em;
+    height: 42rem;
+}
+
+.card-form{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    height: 520px;
+    width: 370px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    background-color: rgba(32, 32, 32, 0.5) !important;
+}
+
+.card-inside{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card-inside p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(221, 200, 105);
+    margin-bottom: 2rem;
+}
+
+.card-inside input{
+    width: 280px;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    border: 0 !important;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+textarea:focus, input:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.card-inside button{
+    padding: 1rem;
+}
+
+.card-inside span{
+
+    color: rgb(221, 200, 105);
+}
+
+/**.lnr-eye {
+    position: absolute;
+    margin-left: 10px;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}*/
+

@@ -1,0 +1,17 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<section id="sect1">
+    <form class="card-form">
+        <div class="card-inside">
+            <p>Crie sua conta!</p>
+            <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+            <input type="email" [(ngModel)]="email" name="email" placeholder="Digite um e-mail" ngModel email>
+            <input type="text" [(ngModel)]="login" name="login" placeholder="Crie um login">
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Digite sua senha">
+  
+            <Button (click)="save()" >Concluir cadastro</Button>
+        </div>
+
+    </form>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,86 @@
+#sect1{
+    display: flex;
+    background-image: url("src/assets/images/backgroundlogin.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position-x: 6em;
+    height: 42rem;
+}
+
+.card-login{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    height: 420px;
+    width: 370px;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    background-color: rgba(32, 32, 32, 0.5) !important;
+}
+
+.card-inside{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card-inside span{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(221, 200, 105);
+    margin-bottom: 2rem;
+}
+
+.card-inside input{
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    border: 0 !important;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.card-inside button{
+    padding: 1rem;
+}
+
+.card-inside .icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;    
+}
+
+.fa-facebook-square {
+    color: rgb(221, 200, 105);
+    margin-right: 1rem;
+}
+
+.fa-google-plus-square {
+    color: rgb(221, 200, 105);
+    margin-right: 1rem;
+}
+
+.card-inside a{
+    color: rgb(221, 200, 105);
+    font-size: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-facebook-square:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+    }
+
+.fa-google-plus-square:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+    }

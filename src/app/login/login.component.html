@@ -1,0 +1,19 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<section id="sect1">
+    <div class="card-login">
+        <div class="card-inside">
+            <span>Bem vindo aventureiro!</span>
+            <input type="text" [(ngModel)]="login" name="login" placeholder="Digite seu Login">
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Digite sua senha">
+            <Button (click)="validUser()" >Entrar</Button>
+            <div class=icones>
+                <span><i class="fab fa-facebook-square fa-2x"></i></span>
+                <span><i class="fab fa-google-plus-square fa-2x"></i></span>
+            </div>
+            <a routerLink="/register">Ainda não tem uma conta? Crie aqui!</a>
+        </div>
+
+    </div>
+</section>
+<app-footer></app-footer>

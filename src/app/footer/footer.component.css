@@ -1,0 +1,15 @@
+
+.rodape {
+    background: rgba(5, 0, 20, 0.5);
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+.rodape p{
+    color: rgb(221, 200, 105);
+    font-size: 13px;
+    text-align: center;
+    height: 3rem;
+    padding: 1rem;
+}
