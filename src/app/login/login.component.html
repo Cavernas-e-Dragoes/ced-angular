@@ -6,10 +6,10 @@
             <span>Bem vindo aventureiro!</span>
             <input type="text" [(ngModel)]="login" name="login" placeholder="Digite seu Login">
             <input type="password" [(ngModel)]="password" name="password" placeholder="Digite sua senha">
-            <Button (click)="validUser()" >Entrar</Button>
+            <Button (click)="catchJWT()" >Entrar</Button>
             <div class=icones>
-                <span (click)="signInWithFB()"><i class="fab fa-facebook-square fa-2x"></i></span>
-                <span (click)="signInWithGoogle()" ><i class="fab fa-google-plus-square fa-2x"></i></span>
+                <span ><i class="fab fa-facebook-square fa-2x"></i></span>
+                <span  ><i class="fab fa-google-plus-square fa-2x"></i></span>
             </div>
             <a routerLink="/register">Ainda não tem uma conta? Crie aqui!</a>
         </div>

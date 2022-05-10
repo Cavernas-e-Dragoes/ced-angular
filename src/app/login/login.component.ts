@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { SocialAuthService } from "@abacritt/angularx-social-login";
 import { FacebookLoginProvider, GoogleLoginProvider } from "@abacritt/angularx-social-login";
-
+import { Router } from '@angular/router';
 
 
 
@@ -17,28 +17,41 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private socialAuthService: SocialAuthService
+    private socialAuthService: SocialAuthService,
+    private route: Router
   ) { }
 
   ngOnInit(): void {
   }
 
-  validUser(): void {
+  catchJWT(): void {
     const loginUser = {
       login:this.login,
       password:this.password
     };
-    console.log(loginUser);
-
     this.authService.validUser(loginUser)
     .subscribe(
       response => {
-        console.log(response);
+        localStorage.setItem("token", response);
+        this.session(response);
       },
       error => {
         console.log(error);
-      });
+      }
+      );
+  }
 
+  session(token: string):void {
+    this.authService.login(token)
+    .subscribe(
+      reponse => {
+        this.route.navigateByUrl('/home'); 
+        console.log(reponse);
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
   signInWithGoogle(): void {
