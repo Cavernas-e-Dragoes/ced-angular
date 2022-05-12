@@ -18,57 +18,59 @@ body {
 }
 
 :root {
-    --text-color: rgb(221, 200, 105);
-    --main-color: ;
-  }
+  --text-color: #ffeba7;
+  --text-color-blue: #102770;
+  --hover-color: #ffeaa7ad;
+  --background-color-yellow: #ffeba7; 
+}
 
 nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
   background-color: rgb(0, 0, 2);
-
 }
-
+  
 .menu{
-    font-size: 1rem;
+  font-size: 1rem;
 }   
-
-
+  
+  
 .menu a:hover {
-    padding: 1rem;
-    background: rgb(121, 120, 60, 0.5);
-    color: #fff;
-    text-shadow: 0px 0px 5px rgb(235, 198, 79);
-    transition: .5s;
-    }
-
-    .menu a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 1rem;
-    border-radius: 3px;
-
-  }
-
-  button{
-
-	padding: 1rem;
-	cursor: pointer;
-	border: none;
-	border-radius: 3px;
-	font-weight: 500;
-	background: rgb(221, 200, 105, 0.7);
-	color: #fff;
-	font-size: 1rem;
-    margin: 0.5rem;
+  padding: 1rem;
+  background: #ffeaa7ad;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgb(235, 198, 79);
+  transition: .5s;
 }
-
+  
+.menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 3px;
+}
+  
+button{
+  width: 10rem;
+  height: 3.4rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  background: #ffeba7;
+  color: #102770;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+  
 button:hover {
-    padding: 1rem;
-    background: rgba(223, 221, 149, 0.5);
-    color: #fff;
-    text-shadow: 0px 0px 5px rgb(235, 198, 79);
-    transition: .5s;
-    }
+  padding: 1rem;
+  background: #ffeaa7ad;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgb(235, 198, 79);
+  transition: .5s;
+}
+  

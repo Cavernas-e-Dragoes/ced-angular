@@ -44,9 +44,12 @@ export class LoginComponent implements OnInit {
   session(token: string):void {
     this.authService.login(token)
     .subscribe(
-      reponse => {
-        this.route.navigateByUrl('/home'); 
-        console.log(reponse);
+      response => {
+        localStorage.setItem("name", response.name);
+        localStorage.setItem("email", response.email);
+        localStorage.setItem("login", response.login);
+        this.route.navigateByUrl('/characters'); 
+        console.log(response);
       },
       error => {
         console.log(error);

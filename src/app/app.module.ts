@@ -15,6 +15,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CharactersComponent } from './characters/characters.component';
+import { HeaderInComponent } from './header-in/header-in.component';
+import { DropMenuComponent } from './drop-menu/drop-menu.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CharactersComponent,
+    HeaderInComponent,
+    DropMenuComponent
   ],
   imports: [
     BrowserModule,

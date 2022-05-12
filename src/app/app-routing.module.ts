@@ -5,6 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CharactersComponent } from './characters/characters.component';
+import { DropMenuComponent } from './drop-menu/drop-menu.component';
+
 
 const routes: Routes = [
 { path: 'header', component: HeaderComponent },
@@ -12,6 +15,8 @@ const routes: Routes = [
 { path: 'footer', component: FooterComponent },
 { path: 'login', component: LoginComponent },
 { path: 'register', component: RegisterComponent },
+{ path: 'characters', component: CharactersComponent},
+{ path: 'drop-menu', component: DropMenuComponent},
 
 { path: '', redirectTo: 'home', pathMatch: 'full' }];
 
