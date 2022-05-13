@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,  HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 
 const baseUrl = 'https://ced-user-managemant.azurewebsites.net';
@@ -8,7 +9,9 @@ const baseUrl = 'https://ced-user-managemant.azurewebsites.net';
 @Injectable({providedIn: 'root'})
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+              private router: Router
+    ) { }
 
   create(user:any): Observable<any> {
     return this.http.post(`${baseUrl}/v1/api/user/create`, user);
@@ -26,6 +29,11 @@ export class AuthService {
    });
     return this.http.get(`${baseUrl}/v1/api/user/userData`, {headers : reqHeader});
   
+  }
+
+  logOut() {
+    localStorage.clear()
+    this.router.navigate(['login'])
   }
 
   

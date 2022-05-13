@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { faDoorOpen } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-drop-menu',
@@ -7,8 +11,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./drop-menu.component.css']
 })
 export class DropMenuComponent implements OnInit {
-
-  constructor(private route: Router) { }
+  faGear = faGear;
+  faDoorOpen = faDoorOpen;
+  constructor(private route: Router,
+              private auth: AuthService) { }
 
   get getName(): any {
     var subName = localStorage.getItem('name');
@@ -22,5 +28,9 @@ export class DropMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
 
+  logOut() {
+    this.auth.logOut();
+  }
 }

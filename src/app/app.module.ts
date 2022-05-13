@@ -10,14 +10,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { CharactersComponent } from './characters/characters.component';
+import { CharactersComponent } from './pages/characters/characters.component';
 import { HeaderInComponent } from './header-in/header-in.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -30,14 +32,16 @@ import { DropMenuComponent } from './drop-menu/drop-menu.component';
     RegisterComponent,
     CharactersComponent,
     HeaderInComponent,
-    DropMenuComponent
+    DropMenuComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SocialLoginModule
+    SocialLoginModule,
+    FontAwesomeModule
   ],
   providers: [
     {

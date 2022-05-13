@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { CharactersComponent } from './characters/characters.component';
+import { CharactersComponent } from './pages/characters/characters.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
 
 
