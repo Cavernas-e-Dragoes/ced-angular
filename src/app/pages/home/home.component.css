@@ -27,9 +27,9 @@ p {
 
 #sect1 {
    background-image: url("src/assets/images/fundoprincipal.jpg");
-   background-size: contain; 
+   background-size: cover; 
    background-repeat: no-repeat;
-   background-position-x: 6em;
+   background-position-y: -6em;
    height: 42rem;
 
 }

@@ -47,6 +47,7 @@ textarea:focus, input:focus {
 
 .card-inside button{
     padding: 1rem;
+    width: auto;
 }
 
 .card-inside .icones{

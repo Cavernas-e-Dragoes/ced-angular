@@ -48,6 +48,7 @@ textarea:focus, input:focus, button:focus {
 
 .card-inside button{
     padding: 1rem;
+    width: auto;
 }
 
 .card-inside span{
