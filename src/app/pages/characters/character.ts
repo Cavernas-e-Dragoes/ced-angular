@@ -1,0 +1,53 @@
+import { Equipment } from "./equipment";
+import { Magic } from "./magic";
+
+export interface Character {
+    name: string;
+    race: number;
+    class: number;
+    equipments: Equipment[];
+    magics: Magic[]; 
+    level: number;
+    alignment:string;
+    hitPoints: number;
+    experiencePoints: number;
+    iniciative: number;
+    speed: number;
+    armorClass: number;
+    inspiration: number;
+    passiveWisdom: number;
+    height: number;
+    weight: number;
+    age: number;
+    strenght: number;
+    dexterity: number;
+    constitution: number;
+    intelligence: number;
+    wisdom: number;
+    charisma: number;
+    STStrenght: boolean;
+    STCharisma: boolean;
+    STDexterity: boolean;
+    STConstitution: boolean;
+    STIntelligence: boolean;
+    STWisdom: boolean;
+    acrobatics: boolean;
+    animalHandling: boolean;
+    arcana: boolean;
+    athletics: boolean;
+    deception: boolean;
+    history: boolean;
+    insight: boolean;
+    intimidation: boolean;
+    investigation: boolean;
+    medicine: boolean;
+    nature: boolean;
+    perception: boolean;
+    performance: boolean;
+    persuasion: boolean;
+    religion: boolean;
+    sleightOfHand: boolean;
+    stealth: boolean;
+    survival: boolean;
+    
+}

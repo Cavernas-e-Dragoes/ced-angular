@@ -1,0 +1,9 @@
+.lista {
+    border: 1px solid red;
+    width: 900px;
+    height: 500px;
+}
+
+td {
+    padding: 2rem;
+}

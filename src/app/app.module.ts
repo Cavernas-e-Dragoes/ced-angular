@@ -21,7 +21,6 @@ import { DropMenuComponent } from './drop-menu/drop-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +32,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CharactersComponent,
     HeaderInComponent,
     DropMenuComponent,
-
   ],
   imports: [
     BrowserModule,

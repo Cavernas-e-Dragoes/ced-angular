@@ -1,4 +1,20 @@
 <app-header-in></app-header-in>
-<p style="color: white;">characters works!</p>
+ 
+<div>
+    <div class="lista">
+       <tr *ngFor="let character of char" ngValue="character">
+           <td>{{character.name}}</td>
+           <td>{{character.race}}</td>
+           <td>{{character.class}}</td>
+       </tr>
+    </div>
+    <div class="lista">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+     </div>
+</div>
 
 <app-footer></app-footer>

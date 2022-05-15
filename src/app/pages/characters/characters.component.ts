@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CharacterService } from 'src/app/services/character.service';
+import { Character } from './character';
 
 
 @Component({
@@ -8,14 +10,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./characters.component.css']
 })
 export class CharactersComponent implements OnInit {
-  characters: any
 
-  constructor(
-    private route: Router
-  
-  ) { }
+  char: Character[];
 
-  ngOnInit(): void {
+  constructor(private service: CharacterService) { 
+    this.char = []}
+
+  ngOnInit() {
+    this.service.list(this.takeToken())
+    .subscribe(data => this.char = data);
+  }
+
+
+  private takeToken(): string {
+
+    var token = localStorage.getItem("token");
+
+    if (token== null) {
+      return "login não encontrado.";
+    } else {
+      console.log(token)
+      return token;
+    }
+
   }
 
 
