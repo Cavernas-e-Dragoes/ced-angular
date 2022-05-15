@@ -4,7 +4,7 @@ import { Magic } from "./magic";
 export interface Character {
     name: string;
     race: number;
-    class: number;
+    charClass: number;
     equipments: Equipment[];
     magics: Magic[]; 
     level: number;
