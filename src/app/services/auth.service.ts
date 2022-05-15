@@ -25,7 +25,8 @@ export class AuthService {
 
     var reqHeader = new HttpHeaders({ 
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + token,
+      'Access-Control-Allow-Origin': '*'
    });
     return this.http.get(`${baseUrl}/v1/api/user/userData`, {headers : reqHeader});
   
