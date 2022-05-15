@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CharacterService } from 'src/app/services/character.service';
 import { Character } from './character';
+import { CharClass } from './charClass';
 
 
 @Component({
@@ -12,18 +13,17 @@ import { Character } from './character';
 export class CharactersComponent implements OnInit {
 
   char: Character[];
+  CharCLass : CharClass;
 
   constructor(private service: CharacterService) { 
-    this.char = []}
+    this.char = [] }
 
   ngOnInit() {
     this.service.list(this.takeToken())
     .subscribe(data => this.char = data);
   }
 
-
   private takeToken(): string {
-
     var token = localStorage.getItem("token");
 
     if (token== null) {
@@ -32,8 +32,21 @@ export class CharactersComponent implements OnInit {
       console.log(token)
       return token;
     }
-
   }
+
+  getClass(id:number) {
+    this.service.getClass(id)
+    .subscribe(data => this.CharCLass =  data);
+    localStorage.setItem("className", this.CharCLass.name);
+  }
+
+  getClassName() : string{
+  return localStorage.getItem("className");
+  }
+
+
+
+
 
 
 

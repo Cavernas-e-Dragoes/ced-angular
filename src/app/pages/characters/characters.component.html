@@ -5,7 +5,7 @@
        <tr *ngFor="let character of char" ngValue="character">
            <td>nome{{character.name}}</td>
            <td>raça{{character.race}}</td>
-           <td>classe{{character.charClass}}</td>
+           <td>{{getClass(character.charClass)}} CLass: {{getClassName()}}</td>
        </tr>
     </div>
     <div class="lista">
