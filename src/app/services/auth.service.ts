@@ -18,15 +18,14 @@ export class AuthService {
   }
   
   validUser(loginUser:any): Observable<any> {
-    return this.http.post(`${baseUrl}/login`, loginUser, {responseType : 'text'});
+    return this.http.post(`${baseUrl}/v1/api/user/`, loginUser, {responseType : 'text'});
   }
 
   login(token:string ): Observable<any> {
 
     var reqHeader = new HttpHeaders({ 
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + token,
-      'Access-Control-Allow-Origin': '*'
+      'Authorization': 'Bearer ' + token
    });
     return this.http.get(`${baseUrl}/v1/api/user/userData`, {headers : reqHeader});
   
