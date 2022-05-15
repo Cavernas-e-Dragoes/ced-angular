@@ -18,7 +18,7 @@ export class AuthService {
   }
   
   validUser(loginUser:any): Observable<any> {
-    return this.http.post(`${baseUrl}/v1/api/user/`, loginUser, {responseType : 'text'});
+    return this.http.post(`${baseUrl}/login`, loginUser, {responseType : 'text'});
   }
 
   login(token:string ): Observable<any> {
