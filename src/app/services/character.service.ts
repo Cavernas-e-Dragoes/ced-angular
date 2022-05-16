@@ -8,7 +8,7 @@ import { Race } from '../pages/characters/race';
 
 
 const baseUrl = 'https://characters-sheet.azurewebsites.net';
-const baseUrlClass = 'https://ced-dataloader.azurewebsites.net';
+const baseUrlData = 'https://ced-dataloader.azurewebsites.net';
 
 @Injectable({
   providedIn: 'root'
@@ -33,11 +33,11 @@ export class CharacterService {
   }
 
   getClass(id:number): Observable<any> {
-    return this.http.get<CharClass>(`${baseUrl}/v1/api/classes/` + id);
+    return this.http.get<CharClass>(`${baseUrlData}/v1/api/classes/` + id);
   }
 
   getRace(id:number): Observable<any> {
-    return this.http.get<Race>(`${baseUrl}/v1/api/races/` + id);
+    return this.http.get<Race>(`${baseUrlData}/v1/api/races/` + id);
   }
 
 }
