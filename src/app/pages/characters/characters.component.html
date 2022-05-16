@@ -2,11 +2,11 @@
  
 <div>
     <div class="lista">
-       <tr *ngFor="let character of char" ngValue="character">
-           <td>nome{{character.name}}</td>
-           <td>{{getRace(character.race)}} Raça: {{getRaceName()}}</td>
-           <td>{{getClass(character.charClass)}} CLasse: {{getClassName()}}</td>
-       </tr>    
+       <ul *ngFor="let character of char" ngValue="character">
+           <li>nome{{character.name}}</li>
+           <li>{{getRace(character.race)}} Raça: {{getRaceName()}}</li>
+           <li>{{getClass(character.charClass)}} CLasse: {{getClassName()}}</li>
+       </ul>    
     </div>
     
 </div>
