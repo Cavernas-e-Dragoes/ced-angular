@@ -14,7 +14,7 @@ a {
 }
 
 body {
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(2, 0, 7);
 }
 
 :root {
@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0;
   background-color: rgba(29, 29, 29, 0.5);
 }
   
