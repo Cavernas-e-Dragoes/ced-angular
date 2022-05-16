@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { CharacterService } from 'src/app/services/character.service';
 import { Character } from './character';
 import { CharClass } from './charClass';
+import { Race } from './race';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class CharactersComponent implements OnInit {
 
   char: Character[];
   CharCLass : CharClass;
+  Race : Race;
 
   constructor(private service: CharacterService) { 
     this.char = [] }
@@ -42,6 +44,16 @@ export class CharactersComponent implements OnInit {
 
   getClassName() : string{
   return localStorage.getItem("className");
+  }
+
+  getRace(id:number) {
+    this.service.getRace(id)
+    .subscribe(data => this.Race =  data);
+    localStorage.setItem("raceName", this.Race.name);
+  }
+
+  getRaceName() : string{
+  return localStorage.getItem("raceName");
   }
 
 

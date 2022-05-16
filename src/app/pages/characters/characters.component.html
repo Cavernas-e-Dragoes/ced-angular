@@ -4,17 +4,11 @@
     <div class="lista">
        <tr *ngFor="let character of char" ngValue="character">
            <td>nome{{character.name}}</td>
-           <td>raça{{character.race}}</td>
-           <td>{{getClass(character.charClass)}} CLass: {{getClassName()}}</td>
+           <td>{{getRace(character.race)}} Raça: {{getRaceName()}}</td>
+           <td>{{getClass(character.charClass)}} CLasse: {{getClassName()}}</td>
        </tr>    
     </div>
-    <div class="lista">
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-     </div>
+    
 </div>
 
 <app-footer></app-footer>
