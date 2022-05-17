@@ -1,19 +1,19 @@
 <app-header></app-header>
  
 <div class="mainbody">
-            <div class="container">
+            <div class="container" *ngFor="let character of char" ngValue="character">
                 <div class="card">
                     <div class="face face1">
                         <div class="content">
                             
-                            <h3  *ngFor="let character of char" ngValue="character">{{character.name}}</h3>
+                            <h3>{{character.name}}</h3>
 
                         </div>
                     </div>
                     <div class="face face2">
                         <div class="content" >
-                            <p *ngFor="let character of char" ngValue="character">{{getRace(character.race)}} Raça: {{getRaceName()}}</p>
-                            <p *ngFor="let character of char" ngValue="character">{{getClass(character.charClass)}} CLasse: {{getClassName()}}</p>
+                            <p>{{getRace(character.race)}} Raça: {{getRaceName()}}</p>
+                            <p>{{getClass(character.charClass)}} CLasse: {{getClassName()}}</p>
                             
                         </div>
                     </div>
