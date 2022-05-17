@@ -18,7 +18,8 @@ export class CharactersComponent implements OnInit {
   Race : Race;
 
   constructor(private service: CharacterService) { 
-    this.char = [] }
+    this.char = [] 
+  }
 
   ngOnInit() {
    this.showCharacters();

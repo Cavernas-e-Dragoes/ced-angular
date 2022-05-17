@@ -1,13 +1,13 @@
 
 <nav>
-    <button>Personagens</button>
+    <button routerLink="/character">Personagens</button>
 <div class="sec-center"> 
     
         <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
         <label class="for-dropdown" for="dropdown">{{getName}}<i class="uil uil-arrow-down"></i></label>
             <div class="section-dropdown"> 
                 <a href="#">Configurações<fa-icon [icon]="faGear"></fa-icon> </a>
-                <a (click)="logOut()" >Sair<fa-icon [icon]="faDoorOpen"></fa-icon></a>
+                <a (click)="logOut()">Sair<fa-icon [icon]="faDoorOpen"></fa-icon></a>
             </div>
        
         
