@@ -1,8 +1,8 @@
 <app-header></app-header>
  
 <div class="mainbody">
-            <div class="container" *ngFor="let character of char" ngValue="character">
-                <div class="card">
+            <div class="container"  ngValue="character">
+                <div *ngFor="let character of char" class="card">
                     <div class="face face1">
                         <div class="content">
                             
