@@ -21,8 +21,20 @@ export class CharactersComponent implements OnInit {
     this.char = [] }
 
   ngOnInit() {
+   this.showCharacters();
+  }
+
+  private showCharacters(): void {
+
     this.service.list(this.takeToken())
-    .subscribe(data => this.char = data);
+    .subscribe(
+      data => { 
+        this.char = data;
+      },
+      error => {
+        console.log(error);
+      });
+
   }
 
   private takeToken(): string {
