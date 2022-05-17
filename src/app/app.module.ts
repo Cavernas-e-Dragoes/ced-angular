@@ -16,7 +16,6 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CharactersComponent } from './pages/characters/characters.component';
-import { HeaderInComponent } from './header-in/header-in.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -30,7 +29,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LoginComponent,
     RegisterComponent,
     CharactersComponent,
-    HeaderInComponent,
     DropMenuComponent,
   ],
   imports: [

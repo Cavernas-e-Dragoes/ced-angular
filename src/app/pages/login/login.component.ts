@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     this.authService.validUser(loginUser)
     .subscribe(
       response => {
+        localStorage.setItem("logged", "on");
         localStorage.setItem("token", response);
         this.session(response);
       },

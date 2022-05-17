@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  logged: boolean;
+
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
+    this.islogged();  
+  }
+  
+  islogged():void{     
+    if(localStorage.getItem("logged") == "on"){
+      this.logged=true;
+    } else {
+      this.logged=false;
+    }
   }
 
 }

@@ -22,19 +22,18 @@ export class RegisterComponent implements OnInit {
   }
 
   save(): void {
+    localStorage.clear();
     const user = {
       name:this.name,
       email:this.email,
       login:this.login,
       password:this.password
     };
-    console.log(user);
 
     this.authService.create(user).subscribe(
       response => {
         localStorage.setItem("name", response.name);
         this.route.navigateByUrl('/characters');
-        console.log(response);
         
       },
       error => {
