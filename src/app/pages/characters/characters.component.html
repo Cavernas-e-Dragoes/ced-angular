@@ -2,8 +2,8 @@
  
 <div class="mainbody">
             <div class="container"  ngValue="character">
-               <a><div *ngFor="let character of char" class="card">
-                    <div class="face face1">
+               <div *ngFor="let character of char" class="card">
+                    <a><div class="face face1">
                         <div class="content">
                             
                             <h3>{{character.name}}</h3>
@@ -16,8 +16,8 @@
                             <p> CLasse: {{character.className}}</p>
                             
                         </div>
-                    </div>
-                </div></a>
+                    </div></a>
+                </div>
 
                 
 
