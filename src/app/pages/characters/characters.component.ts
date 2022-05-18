@@ -49,18 +49,18 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  getClass(id:number) {
+  getClass(id:number): string {
     this.service.getClass(id)
     .subscribe(data => this.CharCLass =  data);
-    return this.CharCLass;
+    return this.CharCLass.name;
   }
 
  
 
-  getRace(id:number) {
+  getRace(id:number): string {
     this.service.getRace(id)
     .subscribe(data => this.Race =  data);
-    return this.Race;
+    return this.Race.name;
   }
 
   
