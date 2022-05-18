@@ -8,3 +8,4 @@ export interface CharClass {
     armorWeaponProficiencies: string;
 
 }
+

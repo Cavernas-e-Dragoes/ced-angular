@@ -17,6 +17,7 @@ export class CharactersComponent implements OnInit {
   CharCLass : CharClass;
   Race : Race;
 
+
   constructor(private service: CharacterService) { 
     this.char = [] 
   }
@@ -49,19 +50,7 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  getClass(id:number): string {
-    this.service.getClass(id)
-    .subscribe(data => this.CharCLass =  data);
-    return this.CharCLass.name;
-  }
-
  
-
-  getRace(id:number): string {
-    this.service.getRace(id)
-    .subscribe(data => this.Race =  data);
-    return this.Race.name;
-  }
 
   
 
