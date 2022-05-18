@@ -7,7 +7,9 @@ import { CharClass } from '../pages/characters/charClass';
 import { Race } from '../pages/characters/race';
 
 
-const baseUrl = 'https://characters-sheet.azurewebsites.net';
+//const baseUrl = 'https://characters-sheet.azurewebsites.net';
+const baseUrl = 'http://localhost:8080';
+
 const baseUrlData = 'https://ced-dataloader.azurewebsites.net';
 
 @Injectable({

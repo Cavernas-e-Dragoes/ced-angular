@@ -52,22 +52,18 @@ export class CharactersComponent implements OnInit {
   getClass(id:number) {
     this.service.getClass(id)
     .subscribe(data => this.CharCLass =  data);
-    localStorage.setItem("className", this.CharCLass.name);
+    return this.CharCLass;
   }
 
-  getClassName() : string{
-  return localStorage.getItem("className");
-  }
+ 
 
   getRace(id:number) {
     this.service.getRace(id)
     .subscribe(data => this.Race =  data);
-    localStorage.setItem("raceName", this.Race.name);
+    return this.Race;
   }
 
-  getRaceName() : string{
-  return localStorage.getItem("raceName");
-  }
+  
 
 
 
