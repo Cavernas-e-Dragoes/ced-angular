@@ -111,10 +111,3 @@
     padding: 0;
     color: #ffeba7;
 }
-
-
-
-.container .card .face.face2 .content a:hover{
-    background-color: #333;
-    color: #fff;
-}
