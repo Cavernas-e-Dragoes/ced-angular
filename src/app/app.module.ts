@@ -18,6 +18,7 @@ import { RegisterComponent } from './register/register.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RegisterComponent,
     CharactersComponent,
     DropMenuComponent,
+    CharacterSheetComponent,
   ],
   imports: [
     BrowserModule,

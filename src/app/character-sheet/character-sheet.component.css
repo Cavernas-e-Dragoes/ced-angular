@@ -1,0 +1,90 @@
+.main{
+    display: flexbox;
+    width: 70%;
+    height: 95vh;
+    margin-left: 15%;
+    background-color: rgb(243, 242, 242);
+    position: absolute;
+    font-family: 'inter', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.637) 10px 10px 20px;
+    
+}
+
+.name{
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 6vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 5px;
+    
+}
+
+.name p{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.705);
+    color: #ffeba7;
+    font-weight: 200;
+}
+
+span{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.attributes-container{
+    width: 10rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 83vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 5px;
+    position: absolute;
+    display: flexbox;
+}
+
+
+
+.attribute{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(49, 48, 48);
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 20% / 30%;
+    border: 1px groove rgba(0, 0, 0, 0.521);
+}
+
+.attribute p{
+    font-size: 1.8em;
+    color: #ffeba7;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.modifier{
+
+    background-color: rgb(75, 74, 74);
+    border: 2px groove rgba(0, 0, 0, 0.521);
+    margin: auto; 
+    width: 3rem;
+    border-radius: 60% / 30%;
+        
+}
+
+.modifier p{
+    font-size: 1.1em;
+}
+
+
+

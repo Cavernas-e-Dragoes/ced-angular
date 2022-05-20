@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
+import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
 { path: 'register', component: RegisterComponent },
 { path: 'characters', component: CharactersComponent},
 { path: 'drop-menu', component: DropMenuComponent},
+{ path: 'character-sheet', component: CharacterSheetComponent},
 
 { path: '', redirectTo: 'home', pathMatch: 'full' }];
 
