@@ -2,14 +2,14 @@
 
 <div class="main">
     <div class="name">
-        <p>Nome do personagem</p>
+        <p>{{char.name}}</p>
     </div>
     
     <div class="attributes-container">
         
         <span>Força</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.strenght}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -17,7 +17,7 @@
         
         <span>Destreza</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.dexterity}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -25,7 +25,7 @@
         
         <span>Constituição</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.constitution}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -33,7 +33,7 @@
         
         <span>Inteligência</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.intelligence}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -41,7 +41,7 @@
         
         <span>Sabedoria</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.wisdom}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -49,7 +49,7 @@
         
         <span>Carisma</span>
         <div class="attribute">
-            <p>10</p>
+            <p>{{char.charisma}}</p>
             <div class="modifier">
                 <p>2</p>
             </div>
@@ -81,28 +81,28 @@
 
     <div class="basic-info">
         <div class="info-race">
-            <p>Raça: Anão</p>
+            <p>Raça: {{char.raceName}}</p>
         </div>
         <div class="info-class">
-            <p>Classe: Bárbaro</p>
+            <p>Classe: {{char.className}}</p>
         </div>
         <div class="info-level">
-            <p>Nível: 1</p>
+            <p>Nível: {{char.level}}</p>
         </div>
         <div class="info-alignment">
-            <p>Alinhamento: leal e bom</p>
+            <p>Alinhamento: {{char.alignment}}</p>
         </div>
     </div>
 
     <div class="start-info">
         <span>Classe de armadura</span>
-        <div class="ca-info"><p>10</p></div>
+        <div class="ca-info"><p>{{char.armorClass}}</p></div>
 
         <span>Pontos de vida</span>
-        <div class="hp-info"><p>10</p></div>
+        <div class="hp-info"><p>{{char.hitPoints}}</p></div>
 
         <span>Deslocamento</span>
-        <div class="speed-info"><p>5</p></div>
+        <div class="speed-info"><p>{{char.speed}}</p></div>
     
 
     </div>

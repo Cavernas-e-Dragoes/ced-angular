@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CharacterService } from 'src/app/services/character.service';
-import { Character } from './character';
+import { CharacterListTO } from './characterListTO';
 import { CharClass } from './charClass';
 import { Race } from './race';
 
@@ -13,7 +13,7 @@ import { Race } from './race';
 })
 export class CharactersComponent implements OnInit {
 
-  chars: Character[];
+  chars: CharacterListTO[];
   CharCLass: CharClass;
   Race: Race;
 
@@ -53,11 +53,9 @@ export class CharactersComponent implements OnInit {
 
   }
 
-  getCharacter(name: string) {
-
-
+  showCharacter(id: number) {
+    localStorage.setItem("idChar", id.toString());
     this.route.navigateByUrl('/character-sheet');
-
   }
 
 

@@ -2,6 +2,7 @@ import { Equipment } from "./equipment";
 import { Magic } from "./magic";
 
 export interface Character {
+    id:number;
     name: string;
     race: number;
     raceName: string;

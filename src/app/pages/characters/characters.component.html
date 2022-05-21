@@ -3,7 +3,7 @@
 <div class="mainbody">
             <div class="container"  ngValue="character">
                <div *ngFor="let character of chars" class="card">
-                    <a (click)="getCharacter(character.name)"><div class="face face1">
+                    <a (click)="showCharacter(character.id)"><div class="face face1">
                         <div class="content">
                             
                             <h3>{{character.name}}</h3>
