@@ -13,46 +13,56 @@ import { Race } from './race';
 })
 export class CharactersComponent implements OnInit {
 
-  char: Character[];
-  CharCLass : CharClass;
-  Race : Race;
+  chars: Character[];
+  CharCLass: CharClass;
+  Race: Race;
 
-
-  constructor(private service: CharacterService) { 
-    this.char = [] 
+  constructor(
+    private service: CharacterService,
+    private route: Router
+  ) {
+    this.chars = []
   }
 
   ngOnInit() {
-   this.showCharacters();
+    this.showCharacters();
   }
 
   private showCharacters(): void {
 
     this.service.list(this.takeToken())
-    .subscribe(
-      data => { 
-        this.char = data;
-      },
-      error => {
-        console.log(error);
-      });
+      .subscribe(
+        data => {
+          this.chars = data;
+        },
+        error => {
+          console.log(error);
+        });
 
   }
 
   private takeToken(): string {
     var token = localStorage.getItem("token");
 
-    if (token== null) {
+    if (token == null) {
       return "login não encontrado.";
     } else {
       console.log(token)
       return token;
     }
+
   }
 
- 
+  getCharacter(name: string) {
 
-  
+
+    this.route.navigateByUrl('/character-sheet');
+
+  }
+
+
+
+
 
 
 

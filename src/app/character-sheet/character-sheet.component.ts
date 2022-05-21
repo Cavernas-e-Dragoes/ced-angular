@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Character } from '../pages/characters/character';
 
 @Component({
   selector: 'app-character-sheet',
@@ -8,10 +9,16 @@ import { Router } from '@angular/router';
 })
 export class CharacterSheetComponent implements OnInit {
 
+  char: Character;
+
   constructor(
     private route: Router) { }
 
   ngOnInit(): void {
+
   }
+
+
+
 
 }
