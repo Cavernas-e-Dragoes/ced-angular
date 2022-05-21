@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   save(): void {
-    localStorage.clear();
+    sessionStorage.clear();
     const user = {
       name:this.name,
       email:this.email,
@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
 
     this.authService.create(user).subscribe(
       response => {
-        localStorage.setItem("name", response.name);
+        sessionStorage.setItem("name", response.name);
         this.route.navigateByUrl('/characters');
         
       },

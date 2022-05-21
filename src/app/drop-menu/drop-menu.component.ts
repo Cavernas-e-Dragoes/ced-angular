@@ -17,7 +17,7 @@ export class DropMenuComponent implements OnInit {
               private auth: AuthService) { }
 
   get getName(): any {
-    var subName = localStorage.getItem('name');
+    var subName = sessionStorage.getItem('name');
     if (subName) {
       subName = subName.slice(0, 12);
     } else {

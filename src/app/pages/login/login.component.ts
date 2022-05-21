@@ -32,8 +32,8 @@ export class LoginComponent implements OnInit {
     this.authService.validUser(loginUser)
     .subscribe(
       response => {
-        localStorage.setItem("logged", "on");
-        localStorage.setItem("token", response);
+        sessionStorage.setItem("logged", "on");
+        sessionStorage.setItem("token", response);
         this.session(response);
       },
       error => {
@@ -46,9 +46,9 @@ export class LoginComponent implements OnInit {
     this.authService.login(token)
     .subscribe(
       response => {
-        localStorage.setItem("name", response.name);
-        localStorage.setItem("email", response.email);
-        localStorage.setItem("login", response.login);
+        sessionStorage.setItem("name", response.name);
+        sessionStorage.setItem("email", response.email);
+        sessionStorage.setItem("login", response.login);
         this.route.navigateByUrl('/characters'); 
       },
       error => {

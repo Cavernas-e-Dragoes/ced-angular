@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   logOut() {
-    localStorage.clear()
+    sessionStorage.clear()
     this.router.navigate(['login'])
   }
 

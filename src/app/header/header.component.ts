@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   }
   
   islogged():void{     
-    if(localStorage.getItem("logged") == "on"){
+    if(sessionStorage.getItem("logged") == "on"){
       this.logged=true;
     } else {
       this.logged=false;

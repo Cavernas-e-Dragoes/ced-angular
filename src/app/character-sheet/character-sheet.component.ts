@@ -18,7 +18,7 @@ export class CharacterSheetComponent implements OnInit {
   }
 
   getCharacter():void {
-    this.service.getCharacter(localStorage.getItem("idChar"))
+    this.service.getCharacter(sessionStorage.getItem("idChar"))
     .subscribe(
       data => {
         this.char = data;

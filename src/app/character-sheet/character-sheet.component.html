@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!--<app-header></app-header>
 
 <div class="main">
     <div class="name">
@@ -70,11 +70,11 @@
             <li>investigation: boolean;</li>
             <li>medicine: boolean;</li>
             <li>nature: boolean;</li>
-            <li> perception: boolean;</li>
+            <li>perception: boolean;</li>
             <li>performance: boolean;</li>
             <li>persuasion: boolean;</li>
             <li>religion: boolean;</li>
-            <li> sleightOfHand: boolean;</li>
+            <li>sleightOfHand: boolean;</li>
             <li>stealth: boolean;</li>                
             <li>survival: boolean;</li>
         </div>
@@ -109,4 +109,121 @@
 
 </div>
 
+<app-footer></app-footer> -->
+
+
+<app-header></app-header>
+
+<div class="main">
+    <div class="name">
+        <p>{{char.name}}</p>
+    </div>
+
+    <div class="basic-info">
+        <div class="info-race">
+            <p>Raça: {{char.raceName}}</p>
+        </div>
+        <div class="info-class">
+            <p>Classe: {{char.className}}</p>
+        </div>
+        <div class="info-level">
+            <p>Nível: {{char.level}}</p>
+        </div>
+        <div class="info-alignment">
+            <p>Alinhamento: {{char.alignment}}</p>
+        </div>
+    </div>
+    
+    <div class="attributes-container">
+        
+        <span>Força</span>
+        <div class="attribute">
+            <p>{{char.strength}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Destreza</span>
+        <div class="attribute">
+            <p>{{char.dexterity}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Constituição</span>
+        <div class="attribute">
+            <p>{{char.constitution}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Inteligência</span>
+        <div class="attribute">
+            <p>{{char.intelligence}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Sabedoria</span>
+        <div class="attribute">
+            <p>{{char.wisdom}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Carisma</span>
+        <div class="attribute">
+            <p>{{char.charisma}}</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="skills">
+            <ul><p>Perícias</p></ul>
+            <li><input type="radio" checked disabled> +4 Acrobatics</li>
+            <li>animalHandling: boolean;</li>
+            <li>arcana: boolean;</li>
+            <li>athletics: boolean;</li>
+            <li>deception: boolean;</li>
+            <li>history: boolean;</li>
+            <li>insight: boolean;</li>
+            <li>intimidation: boolean;</li>
+            <li>investigation: boolean;</li>
+            <li>medicine: boolean;</li>
+            <li>nature: boolean;</li>
+            <li>perception: boolean;</li>
+            <li>performance: boolean;</li>
+            <li>persuasion: boolean;</li>
+            <li>religion: boolean;</li>
+            <li>sleightOfHand: boolean;</li>
+            <li>stealth: boolean;</li>                
+            <li>survival: boolean;</li>
+        </div>
+
+
+
+    <div class="start-info">
+        <span>Classe de armadura</span>
+        <div class="ca-info"><p>{{char.armorClass}}</p></div>
+
+        <span>Pontos de vida</span>
+        <div class="hp-info"><p>{{char.hitPoints}}</p></div>
+
+        <span>Deslocamento</span>
+        <div class="speed-info"><p>{{char.speed}}</p></div>
+    
+
+    </div>
+
+</div>
+
 <app-footer></app-footer>
+

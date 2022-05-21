@@ -14,7 +14,7 @@
 }
 
 .name{
-    width: 95%;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     height: 6vh;
     margin-top: 1rem;
@@ -34,6 +34,21 @@
     font-weight: 200;
 }
 
+.basic-info{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3.6rem;
+    margin-left: 50%;   
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 5px;
+    width: 45%;
+    height: 6vh;
+}
+
 span{
     margin-top: 1rem;
     display: flex;
@@ -43,7 +58,7 @@ span{
 }
 
 .attributes-container{
-    width: 10rem;
+    width: 7rem;
     background-color: rgba(0, 0, 0, 0.5);
     height: 83vh;
     margin-top: 1rem;
@@ -103,20 +118,7 @@ span{
     
 }
 
-.basic-info{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: -48.5rem;
-    margin-left: 30rem ;   
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 5px;
-    width: 40rem;
-    height: 6vh;
-}
+
 
 
 
