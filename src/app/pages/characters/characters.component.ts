@@ -42,7 +42,7 @@ export class CharactersComponent implements OnInit {
   }
 
   private takeToken(): string {
-    var token = localStorage.getItem("token");
+    var token = sessionStorage.getItem("token");
 
     if (token == null) {
       return "login não encontrado.";
@@ -54,7 +54,7 @@ export class CharactersComponent implements OnInit {
   }
 
   showCharacter(id: number) {
-    localStorage.setItem("idChar", id.toString());
+    sessionStorage.setItem("idChar", id.toString());
     this.route.navigateByUrl('/character-sheet');
   }
 
