@@ -22,7 +22,7 @@ export interface Character {
     height: number;
     weight: number;
     age: number;
-    strenght: number;
+    strength: number;
     dexterity: number;
     constitution: number;
     intelligence: number;
