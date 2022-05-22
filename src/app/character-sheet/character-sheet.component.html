@@ -1,116 +1,3 @@
-<!--<app-header></app-header>
-
-<div class="main">
-    <div class="name">
-        <p>{{char.name}}</p>
-    </div>
-    
-    <div class="attributes-container">
-        
-        <span>Força</span>
-        <div class="attribute">
-            <p>{{char.strength}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-        
-        <span>Destreza</span>
-        <div class="attribute">
-            <p>{{char.dexterity}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-        
-        <span>Constituição</span>
-        <div class="attribute">
-            <p>{{char.constitution}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-        
-        <span>Inteligência</span>
-        <div class="attribute">
-            <p>{{char.intelligence}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-        
-        <span>Sabedoria</span>
-        <div class="attribute">
-            <p>{{char.wisdom}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-        
-        <span>Carisma</span>
-        <div class="attribute">
-            <p>{{char.charisma}}</p>
-            <div class="modifier">
-                <p>2</p>
-            </div>
-        </div>
-
-    </div>
-    
-    <div class="skills">
-            <ul><p>Perícias</p></ul>
-            <li><input type="radio" checked disabled> +4 Acrobatics</li>
-            <li>animalHandling: boolean;</li>
-            <li>arcana: boolean;</li>
-            <li>athletics: boolean;</li>
-            <li>deception: boolean;</li>
-            <li>history: boolean;</li>
-            <li>insight: boolean;</li>
-            <li>intimidation: boolean;</li>
-            <li>investigation: boolean;</li>
-            <li>medicine: boolean;</li>
-            <li>nature: boolean;</li>
-            <li>perception: boolean;</li>
-            <li>performance: boolean;</li>
-            <li>persuasion: boolean;</li>
-            <li>religion: boolean;</li>
-            <li>sleightOfHand: boolean;</li>
-            <li>stealth: boolean;</li>                
-            <li>survival: boolean;</li>
-        </div>
-
-    <div class="basic-info">
-        <div class="info-race">
-            <p>Raça: {{char.raceName}}</p>
-        </div>
-        <div class="info-class">
-            <p>Classe: {{char.className}}</p>
-        </div>
-        <div class="info-level">
-            <p>Nível: {{char.level}}</p>
-        </div>
-        <div class="info-alignment">
-            <p>Alinhamento: {{char.alignment}}</p>
-        </div>
-    </div>
-
-    <div class="start-info">
-        <span>Classe de armadura</span>
-        <div class="ca-info"><p>{{char.armorClass}}</p></div>
-
-        <span>Pontos de vida</span>
-        <div class="hp-info"><p>{{char.hitPoints}}</p></div>
-
-        <span>Deslocamento</span>
-        <div class="speed-info"><p>{{char.speed}}</p></div>
-    
-
-    </div>
-
-</div>
-
-<app-footer></app-footer> -->
-
 
 <app-header></app-header>
 
@@ -119,7 +6,7 @@
         <p>{{char.name}}</p>
     </div>
 
-    <div class="basic-info">
+        <div class="basic-info">
         <div class="info-race">
             <p>Raça: {{char.raceName}}</p>
         </div>
@@ -186,44 +73,265 @@
 
     </div>
     
-    <div class="skills">
-            <ul><p>Perícias</p></ul>
-            <li><input type="radio" checked disabled> +4 Acrobatics</li>
-            <li>animalHandling: boolean;</li>
-            <li>arcana: boolean;</li>
-            <li>athletics: boolean;</li>
-            <li>deception: boolean;</li>
-            <li>history: boolean;</li>
-            <li>insight: boolean;</li>
-            <li>intimidation: boolean;</li>
-            <li>investigation: boolean;</li>
-            <li>medicine: boolean;</li>
-            <li>nature: boolean;</li>
-            <li>perception: boolean;</li>
-            <li>performance: boolean;</li>
-            <li>persuasion: boolean;</li>
-            <li>religion: boolean;</li>
-            <li>sleightOfHand: boolean;</li>
-            <li>stealth: boolean;</li>                
-            <li>survival: boolean;</li>
+
+    <div class="info-value"><p>10</p></div>
+    <div class="info-side"><p>Inspiração</p></div>
+    
+    <div class="info-value"><p>10</p></div>
+    <div  class="info-side"><p>Bônus de proficiência</p></div>
+    
+    <div class="tests">
+            <ul><p>Testes de resistência</p></ul>
+            <li><input type="radio" checked disabled> Força</li>
+            <li><input type="radio" disabled> Destreza</li>
+            <li><input type="radio" checked disabled> Constituição</li>
+            <li><input type="radio" checked disabled> Inteligência</li>
+            <li><input type="radio" checked disabled> Sabedoria</li>
+            <li><input type="radio" checked disabled> Carisma</li>
+            
         </div>
 
+    <div class="skills">
+            <ul><p>Perícias</p></ul>
+            <li title="sabedoria"><input type="radio" checked disabled> +4 Acrobacia</li>
+            <li title="sabedoria"><input type="radio" disabled> Adestrar animais</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Arcanismo</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Atletismo</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Atuação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Enganação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Furtividade</li>
+            <li title="sabedoria"><input type="radio" checked disabled> História</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Indimidação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Intuição</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Investigação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Medicina</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Natureza</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Percepção</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Persuasão</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Prestidigitação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Religião</li>                
+            <li title="sabedoria"><input type="radio" checked disabled > Sobrevivência</li>
+        </div>
+        
+        <div class="info-value2"><p>10</p></div>
+    <div class="info-side2"><p title="sabedoria">Percepção passiva</p></div>
 
 
     <div class="start-info">
-        <span>Classe de armadura</span>
-        <div class="ca-info"><p>{{char.armorClass}}</p></div>
+        <div class="ca-info"><span class="title-start">CA</span><p>{{char.armorClass}}</p></div>
 
-        <span>Pontos de vida</span>
-        <div class="hp-info"><p>{{char.hitPoints}}</p></div>
+        <div class="hp-info"><span class="title-start">HP</span><p>{{char.hitPoints}}</p></div>
 
-        <span>Deslocamento</span>
-        <div class="speed-info"><p>{{char.speed}}</p></div>
-    
+        <div class="speed-info"><span class="title-start">Deslocamento</span><p>{{char.speed}}</p></div>
 
+        <div class="init-info"><span class="title-start">Iniciativa</span><p>?</p></div>
     </div>
+
+    <div class="container-final">
+        <div class="start-info2">
+            <span>Antecedente:</span><p>khdkajs skjdhaks dfsd</p>
+        </div>
+
+        <div class="start-info2">
+            <span>Exp:</span><p>1234567</p>
+        </div>
+    </div>
+
+    <div class="container-specifies">
+        <div class="specifies">
+            <span>Traços de personalidade</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Ideais</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Vínculos</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Defeitos</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+    </div>
+
+    <div class="list-equip"><span>Equipamentos</span></div>
+
+    <div class="list-magic"><span>Magias</span></div>
 
 </div>
 
 <app-footer></app-footer>
+
+<!--<app-header></app-header>
+
+<div class="main">
+    <div class="name">
+        <p>Nome do personagem</p>
+    </div>
+
+        <div class="basic-info">
+        <div class="info-race">
+            <p>Raça: anao</p>
+        </div>
+        <div class="info-class">
+            <p>Classe: barbaro</p>
+        </div>
+        <div class="info-level">
+            <p>Nível: 1</p>
+        </div>
+        <div class="info-alignment">
+            <p>Alinhamento: leal e bom</p>
+        </div>
+    </div>
+    
+    <div class="attributes-container">
+        
+        <span>Força</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Destreza</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Constituição</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Inteligência</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Sabedoria</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+        
+        <span>Carisma</span>
+        <div class="attribute">
+            <p>10</p>
+            <div class="modifier">
+                <p>2</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="info-value"><p>10</p></div>
+    <div class="info-side"><p>Inspiração</p></div>
+    
+    <div class="info-value"><p>10</p></div>
+    <div  class="info-side"><p>Bônus de proficiência</p></div>
+    
+    <div class="tests">
+            <ul><p>Testes de resistência</p></ul>
+            <li><input type="radio" checked disabled> Força</li>
+            <li><input type="radio" disabled> Destreza</li>
+            <li><input type="radio" checked disabled> Constituição</li>
+            <li><input type="radio" checked disabled> Inteligência</li>
+            <li><input type="radio" checked disabled> Sabedoria</li>
+            <li><input type="radio" checked disabled> Carisma</li>
+            
+        </div>
+
+    <div class="skills">
+            <ul><p>Perícias</p></ul>
+            <li title="sabedoria"><input type="radio" checked disabled> +4 Acrobacia</li>
+            <li title="sabedoria"><input type="radio" disabled> Adestrar animais</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Arcanismo</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Atletismo</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Atuação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Enganação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Furtividade</li>
+            <li title="sabedoria"><input type="radio" checked disabled> História</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Indimidação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Intuição</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Investigação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Medicina</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Natureza</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Percepção</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Persuasão</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Prestidigitação</li>
+            <li title="sabedoria"><input type="radio" checked disabled> Religião</li>                
+            <li title="sabedoria"><input type="radio" checked disabled > Sobrevivência</li>
+        </div>
+        
+        <div class="info-value2"><p>10</p></div>
+    <div class="info-side2"><p title="sabedoria">Percepção passiva</p></div>
+
+
+    <div class="start-info">
+        <div class="ca-info"><span class="title-start">CA</span><p>10</p></div>
+
+        <div class="hp-info"><span class="title-start">HP</span><p>10</p></div>
+
+        <div class="speed-info"><span class="title-start">Deslocamento</span><p>5</p></div>
+
+        <div class="init-info"><span class="title-start">Iniciativa</span><p>10</p></div>
+    </div>
+
+    <div class="container-final">
+        <div class="start-info2">
+            <span>Antecedente:</span><p>khdkajs skjdhaks dfsd</p>
+        </div>
+
+        <div class="start-info2">
+            <span>Exp:</span><p>1234567</p>
+        </div>
+    </div>
+
+    <div class="container-specifies">
+        <div class="specifies">
+            <span>Traços de personalidade</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Ideais</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Vínculos</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+
+        <div class="specifies">
+            <span>Defeitos</span>
+            <p>hskjhdajsdhkjs sjhdjh sjdhsjd sjdhsajdh sjhadh djshjashd dhsjdhaks jsdsjdh</p>
+        </div>
+    </div>
+
+    <div class="list-equip"><span>Equipamentos</span></div>
+
+    <div class="list-magic"><span>Magias</span></div>
+
+</div>
+
+<app-footer></app-footer>-->
 
