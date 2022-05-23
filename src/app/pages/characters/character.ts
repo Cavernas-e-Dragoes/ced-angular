@@ -19,21 +19,32 @@ export interface Character {
     armorClass: number;
     inspiration: number;
     passiveWisdom: number;
-    height: number;
-    weight: number;
-    age: number;
+
+    //attributes
     strength: number;
     dexterity: number;
     constitution: number;
     intelligence: number;
     wisdom: number;
     charisma: number;
+
+    //modifiers
+    strengthModifier: number;
+    dexterityModifier: number;
+    constitutionModifier: number;
+    intelligenceModifier: number;
+    wisdomModifier: number;
+    charismaModifier: number;
+
+    //saving throws
     STStrenght: boolean;
     STCharisma: boolean;
     STDexterity: boolean;
     STConstitution: boolean;
     STIntelligence: boolean;
     STWisdom: boolean;
+
+    //skils
     acrobatics: boolean;
     animalHandling: boolean;
     arcana: boolean;
