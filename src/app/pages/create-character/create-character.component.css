@@ -1,0 +1,235 @@
+:root {
+    --text-color: #ffeba7;
+    --text-color-blue: #102770;
+    --hover-color: #ffeaa7ad;
+    --background-color-yellow: #ffeba7; 
+} 
+
+.holder {
+    display: flex;
+    justify-content: center; 
+    font-family: 'inter', sans-serif;
+    text-decoration: none; 
+}
+
+.one {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 50rem;
+    background:rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+}
+
+.one label {
+    margin-bottom: 4rem;
+
+}
+
+.one p{
+    color: #ffeba7;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.one input{
+    text-align: center;
+    font-size: 1rem;
+    width: 20rem;
+    height: 4rem;
+}
+
+.two {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 50rem;
+    background:rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+}
+.two label {
+    margin-bottom: 4rem;
+
+}
+
+.two p{
+    color: #ffeba7;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.two select{
+    text-align: center;
+    font-size: 1rem;
+    width: 20rem;
+    height: 4rem;
+}
+
+.three {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 50rem;
+    background:rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button{
+    width: 60rem;
+    margin-left: 0;
+}
+
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px){
+    .container{
+        width: 300px;
+    }
+}
+
+.container .card{
+    position: relative;
+   
+}
+
+.container .card .face{
+    width: 220px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(150px);
+    border-radius: 3px;
+}
+
+.container .card:hover .face.face1{
+    background-color: #ffeaa7ad;
+    transform: translateY(0);
+    
+}
+
+.container .card .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.content img{
+    max-width: 150px;
+}
+.container .card:hover .face.face1 .content img{
+    max-width: 150px;
+
+}
+
+
+.container .card .face.face1 .content h3{
+    color: #ffeba7;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 200;
+}
+.container .card:hover .face.face1 .content h3{
+    color: rgb(22, 22, 22);
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+.container .card .face.face1 .content h5{
+    padding: 0.2rem;
+    color: #ffeba7;
+    font-size: 0em;
+    text-align: center;
+    font-weight: 200;
+}
+.container .card:hover .face.face1 .content h5{
+    padding: 0.2rem;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+.container .card .face.face2{
+    border-radius: 3px;
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content h2{
+    margin-bottom: 0.5rem;
+    padding: 0;
+    color: #ffeba7;
+    text-align: center;
+}
+
+.container .card .face.face2 .content h3{
+    cursor: pointer;
+    padding: 0;
+    color: #ffeba7;
+    text-align: left;
+}
+
+.container .card .face.face2 .content h3:hover{
+    font-size: 1.5rem;
+}
+
+.container .card .face.face2 .content h3:active{
+    color: aqua;
+}
+
+.container .card .face.face2 .content h5{
+    margin-bottom: 1rem;
+    padding: 0;
+    color: #ffeba7;
+    text-align: left;
+}
+
+
+
+     
+    

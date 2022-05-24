@@ -1,10 +1,11 @@
 #sect1{
     display: flex;
     background-image: url("src/assets/images/backgroundlogin.jpg");
-    background-size: cover; 
+    background-size: 200vmin; 
     background-repeat: no-repeat;
     background-position-y: -6em;
     height: 52rem;
+    
 }
 
 .card-form{

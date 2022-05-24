@@ -1,7 +1,10 @@
 .main{
-    display: flexbox;
+    margin-top: 1rem;
+    display: table;
+    flex-direction: column;
+    justify-content: center;
     width: 70%;
-    height: 120vh;
+    height: 150vh;
     margin-left: 15%;
     background-color: rgb(243, 242, 242);
     position: absolute;
@@ -9,6 +12,7 @@
     box-shadow: rgba(0, 0, 0, 0.637) 10px 10px 20px;
     min-width: 1280px;
     padding: 0 2rem;
+    padding-bottom: 100px;
 }
 .name{
     width: 50%;
@@ -362,3 +366,4 @@ p{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+

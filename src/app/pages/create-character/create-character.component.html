@@ -1,0 +1,108 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<div class="holder">
+    <container-element [ngSwitch]="count">
+        <div *ngSwitchCase="1">
+
+            <div class="one">
+                <label for="name">
+                    <p>Crie um nome</p>
+                </label>
+                <input type="text" id="name" placeholder="Crie um nome">
+            </div>
+
+        </div>
+
+
+        <div *ngSwitchCase="2">
+
+            <div class="two">
+                <div class="container" ngValue="character">
+                    <div class="card">
+                        <a>
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/images/dwarf.svg">
+                                    <h3>Anão</h3>
+                                    <h5>Constituição + 2</h5>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h2>Sub-raças</h2>
+                                    <span title=" Constituicao + 2, Sabedoria + 1">
+                                        <h3>Anão da Colina</h3>
+                                        <h5> Sabedoria + 1</h5>
+                                    </span>
+                                    <span title=" Constituicao + 2, Força + 2">
+                                        <h3>Anão da Montanha</h3>
+                                        <h5>Força + 2</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a>
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/images/dwarf.svg">
+                                    <h3>Anão</h3>
+                                    <h5>Constituição + 2</h5>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h2>Sub-raças</h2>
+                                    <span title=" Constituicao + 2, Sabedoria + 1">
+                                        <h3>Anão da Colina</h3>
+                                        <h5> Sabedoria + 1</h5>
+                                    </span>
+                                    <span title=" Constituicao + 2, Força + 2">
+                                        <h3>Anão da Montanha</h3>
+                                        <h5>Força + 2</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a>
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/images/dwarf.svg">
+                                    <h3>Anão</h3>
+                                    <h5>Constituição + 2</h5>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h2>Sub-raças</h2>
+                                    <span title=" Constituicao + 2, Sabedoria + 1">
+                                        <h3>Anão da Colina</h3>
+                                        <h5> Sabedoria + 1</h5>
+                                    </span>
+                                    <span title=" Constituicao + 2, Força + 2">
+                                        <h3>Anão da Montanha</h3>
+                                        <h5>Força + 2</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+
+                    
+                </div>
+            </div>
+
+        </div>
+        <div *ngSwitchDefault>...</div>
+        <button (click)="fenomeno()">OK</button>
+    </container-element>
+
+</div>
+<p>The button has been clicked {{count}} times.</p>

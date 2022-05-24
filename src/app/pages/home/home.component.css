@@ -27,6 +27,8 @@ p {
    background-repeat: no-repeat;
    background-position-y: -6em;
    height: 52rem;
+   min-width: 1645px;
+   
 
 }
 

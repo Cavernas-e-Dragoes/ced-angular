@@ -19,6 +19,7 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
+import { CreateCharacterComponent } from './pages/create-character/create-character.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { CharacterSheetComponent } from './character-sheet/character-sheet.compo
     CharactersComponent,
     DropMenuComponent,
     CharacterSheetComponent,
+    CreateCharacterComponent,
   ],
   imports: [
     BrowserModule,

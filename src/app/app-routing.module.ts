@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { DropMenuComponent } from './drop-menu/drop-menu.component';
 import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
+import { CreateCharacterComponent } from './pages/create-character/create-character.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
 { path: 'characters', component: CharactersComponent},
 { path: 'drop-menu', component: DropMenuComponent},
 { path: 'character-sheet', component: CharacterSheetComponent},
+{ path: 'create-character', component: CreateCharacterComponent},
 
 { path: '', redirectTo: 'home', pathMatch: 'full' }];
 
