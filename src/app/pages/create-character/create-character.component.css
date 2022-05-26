@@ -45,11 +45,11 @@
 .two {
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
+    padding: 0;
     flex-direction: column;
     align-items: center;
-    width: 60rem;
-    height: 50rem;
+    width: 75rem;
+    height: 60rem;
     background:rgba(0, 0, 0, 0.555);
     border-radius: 6px;
 }
@@ -71,6 +71,10 @@
     height: 4rem;
 }
 
+img{
+    height: 200px;
+}
+
 .three {
     margin-top: 2rem;
     display: flex;
@@ -88,18 +92,19 @@ textarea:focus, input:focus {
     outline: 0;
 }
 
+
 button{
-    width: 60rem;
+    width: 100%;
     margin-left: 0;
 }
 
 
-.container{
-    width: 1000px;
+.container{    
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
 @media only screen and (max-width: 1000px){
@@ -107,6 +112,7 @@ button{
         width: 300px;
     }
 }
+
 
 .container .card{
     position: relative;
@@ -151,6 +157,7 @@ button{
 }
 .container .card:hover .face.face1 .content img{
     max-width: 150px;
+    margin-bottom: 0;
 
 }
 
@@ -165,19 +172,20 @@ button{
     color: rgb(22, 22, 22);
     text-align: center;
     font-size: 1em;
+    margin-top: -10px;
 }
 
 
 
 .container .card .face.face1 .content h5{
-    padding: 0.2rem;
+    
     color: #ffeba7;
     font-size: 0em;
     text-align: center;
     font-weight: 200;
 }
 .container .card:hover .face.face1 .content h5{
-    padding: 0.2rem;
+    
     color: rgb(22, 22, 22);
     text-align: center;
     font-size: 0.8em;
@@ -216,6 +224,7 @@ button{
 
 .container .card .face.face2 .content h3:hover{
     font-size: 1.5rem;
+    transition: 0.5s;
 }
 
 .container .card .face.face2 .content h3:active{
@@ -228,8 +237,3 @@ button{
     color: #ffeba7;
     text-align: left;
 }
-
-
-
-     
-    
