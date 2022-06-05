@@ -12,7 +12,7 @@
                 <input type="text" id="name" placeholder="Crie um nome">
             </div>
 
-        </div> 
+        </div>
 
 
         <div *ngSwitchCase="2">
@@ -30,15 +30,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <h2>Sub-raças</h2>
-                                    <span title=" Constituicao + 2, Sabedoria + 1">
-                                        <h3>Anão da Colina</h3>
-                                        <h5> Sabedoria + 1</h5>
-                                    </span>
-                                    <span title=" Constituicao + 2, Força + 2">
-                                        <h3>Anão da Montanha</h3>
-                                        <h5>Força + 2</h5>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -55,19 +47,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <h2>Sub-raças</h2>
-                                    <span title=" Destreza + 2, Sabedoria + 1">
-                                        <h3>Elfo da Floresta</h3>
-                                        <h5>Sabedoria + 1</h5>
-                                    </span>
-                                    <span title=" Destreza + 2, Inteligência + 1">
-                                        <h3>Alto elfo</h3>
-                                        <h5>Inteligência + 1</h5>
-                                    </span>
-                                    <span title=" Destreza + 2, Carisma + 1">
-                                        <h3>Drow</h3>
-                                        <h5>Carisma + 1</h5>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -84,15 +64,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <h2>Sub-raças</h2>
-                                    <span title=" Destreza + 2, Carisma + 1">
-                                        <h3>Pés Leves</h3>
-                                        <h5> Carisma + 1</h5>
-                                    </span>
-                                    <span title=" Destreza + 2, Constituicao + 1">
-                                        <h3>Robusto</h3>
-                                        <h5>Constituicao + 1</h5>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -109,22 +81,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <span title="+ 1 em todos atributos">
-                                        <h3>Normal</h3>
-                                        <h5> </h5>
-                                    </span>
-                                    <h3>Alternativo</h3>
-                                    <span title="TRAÇOS RACIAIS ALTERNATIVOS
-                                    Se sua campanha usa as regras opcionais de talentos do capítulo
-                                    6, seu Mestre pode permitir que você utilize os traços raciais
-                                    alternativos que substituem as características Aumento no Valor
-                                    de Habilidade e Perícias">
-                                        <h5>Aumento no Valor de Habilidade. Dois valores de habilidade, <br>
-                                            à sua escolha, aumentam em 1.<br>
-                                            Você ganha proficiência em uma perícia, à sua
-                                            escolha.<br>
-                                            Você adquire um talento de sua escolha.</h5>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -142,14 +99,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <span title="Draconatos. É fácil presumir que um draconato é um
-                                    monstro, principalmente se suas escamas possuírem uma herança
-                                    cromática. A não ser que o draconato comece a cuspir fogo e
-                                    causar destruição, no entanto, as pessoas tendem a reagir com
-                                    cautela ao invés de com medo descontrolado.
-                                    ">
-                                        <h3>Draconato</h3>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -166,15 +116,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <h2>Sub-raças</h2>
-                                    <span title=" Inteligência + 2, Destreza + 1">
-                                        <h3>Gnomo da Floresta</h3>
-                                        <h5>Destreza + 1</h5>
-                                    </span>
-                                    <span title=" Inteligência + 2, Constituicao + 1">
-                                        <h3>Gnomo das Rochas</h3>
-                                        <h5>Constituicao + 1</h5>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -191,12 +133,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <h3>+ 1 em dois atributos</h3>
-                                    <span title="Escolha 2 atributos que receberá + 1">
-                                        <div *ngFor="let chk of checkBox; let i = index">
-                                            <input [(ngModel)]="chk.checked" type="checkbox" [disabled]="!chk.checked && maxNo" (change)="onChange(chk.checked)">{{chk.name}}
-                                        </div>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -214,9 +151,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <span title="Good choice">
-                                        <h3>Meio-Orc</h3>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -233,9 +168,7 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <span title="Good choice">
-                                        <h3>Tiefling</h3>
-                                    </span>
+                                    <p>info sobre a raca</p>
                                 </div>
                             </div>
                         </a>
@@ -245,8 +178,14 @@
             </div>
 
         </div>
-        <div *ngSwitchDefault>...</div>
+
+        
+        
+        <div *ngSwitchDefault>...
+        </div>
+        
         <button (click)="fenomeno()">OK</button>
+    
     </container-element>
 
 </div>

@@ -1,0 +1,118 @@
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 3;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    background-color: rgba(29, 29, 29, 0.5);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 5;
+    font-size: 1rem;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 5;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+
+.menu a:hover {
+    background: #ffeaa7ad;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(235, 198, 79);
+    transition: .5s;
+}
+
+.div-button {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 3;
+}
+.icon-menu{
+    position: absolute;
+    align-self: flex-start;
+}
+i{
+    opacity: 0;
+    position: absolute;
+    align-self: flex-start;
+    color: #ffeba7;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    background: #ffeba7;
+    color: #102770;
+    font-size: 16px;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background: #ffeaa7ad;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(235, 198, 79);
+    transition: .5s;
+}
+
+@media (max-width: 960px) {
+    i{
+        opacity: 1;
+    }
+    nav {
+        flex-direction: column;
+        transform: translatey(-500px);
+        transition: 1s;
+    }
+    .icon:checked + label .fa{
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+    .icon:not(:checked) + label .fa{
+
+        transition: .5s;
+    }
+    .icon:checked + label .fa ~ nav{
+        transform: translateY(500px);
+        transition: .5s;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        width: 100%;
+    }
+    .div-button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

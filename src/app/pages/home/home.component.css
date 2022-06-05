@@ -16,19 +16,18 @@ p {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
 #sect1 {
-   background-image: url("src/assets/images/fundoprincipal.jpg");
-   background-size: cover; 
-   background-repeat: no-repeat;
-   background-position-y: -6em;
-   height: 52rem;
-   min-width: 1645px;
-   
+
+
+    height: 52rem;
+    min-width: 1645px;
+
 
 }
 
@@ -38,7 +37,7 @@ p {
     width: 15rem;
     position: absolute;
     margin: 0 43%;
-    
+
 
 }
 
@@ -51,7 +50,7 @@ p {
     width: 20rem;
     padding: 3rem;
     align-items: center;
-    
+
 }
 
 .fadeIn1 {
@@ -85,11 +84,11 @@ p {
     opacity: 0;
     animation-delay: 22s;
     animation-fill-mode: forwards;
-    
-    
+
+
 }
 
-.containerPrincipal img{
+.containerPrincipal img {
     position: fixed;
     margin-top: -4rem;
     margin-left: -4rem;
