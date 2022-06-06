@@ -1,5 +1,10 @@
+
+body{
+    display: flex;
+}
+
 nav {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -10,14 +15,24 @@ nav {
     padding: 0;
     background-color: rgba(29, 29, 29, 0.5);
 }
+.div-button {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgba(29, 29, 29, 0.5);
 
-.menu {
+}
+
+.menu {    
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     flex-shrink: 5;
     font-size: 1rem;
-}
+} 
+
 
 .menu a {
     display: flex;
@@ -37,11 +52,7 @@ nav {
     transition: .5s;
 }
 
-.div-button {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-shrink: 3;
-}
+
 .icon{
     position: absolute;
     align-self: flex-start;
@@ -61,8 +72,8 @@ input[type="checkbox"] {
 }
 
 button {
-    width: 180px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     padding: 10px;
     cursor: pointer;
     border: none;
@@ -82,8 +93,18 @@ button:hover {
 }
 
 @media (max-width: 960px) {
+    label{
+        width: 30px;
+        height: 55px;
+        background-color: rgba(29, 29, 29, 0.5);
+        
+    }
+    body{
+        display: block;
+    }
     i{
         opacity: 1;
+        z-index: 1;
     }
     nav {
         flex-direction: column;
@@ -98,7 +119,7 @@ button:hover {
         transition: .5s;
     }
     .icon:checked ~ nav{
-        transform: translateY(40px);
+        transform: translateY(55px);
         transition: 1s;
     }
     .menu {
@@ -106,12 +127,11 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
-    button{
-        width: 100%;
-    }
-    .div-button {
-        flex-direction: column;
-        width: 100%;
+    .div-button{
+        margin-top: -275px;
+        
+        justify-content: flex-end; 
+        background-color: rgba(29, 29, 29, 0.5);   
     }
 
 }
