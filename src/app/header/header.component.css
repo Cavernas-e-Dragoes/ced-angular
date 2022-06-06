@@ -1,5 +1,5 @@
 nav {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -42,7 +42,7 @@ nav {
     flex-wrap: nowrap;
     flex-shrink: 3;
 }
-.icon-menu{
+.icon{
     position: absolute;
     align-self: flex-start;
 }
@@ -87,8 +87,7 @@ button:hover {
     }
     nav {
         flex-direction: column;
-        transform: translatey(-500px);
-        transition: 1s;
+        transform: translateY(-500px);
     }
     .icon:checked + label .fa{
         transform: rotate(90deg);
@@ -98,9 +97,9 @@ button:hover {
 
         transition: .5s;
     }
-    .icon:checked + label .fa ~ nav{
-        transform: translateY(500px);
-        transition: .5s;
+    .icon:checked ~ nav{
+        transform: translateY(40px);
+        transition: 1s;
     }
     .menu {
         width: 100%;
